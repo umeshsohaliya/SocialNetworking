@@ -1,0 +1,272 @@
+<!-- <META http-equiv="REFRESH" content="0; URL=main.action">   -->
+<!DOCTYPE unspecified PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="/struts-tags" prefix="s"%>
+<html>
+<head>
+<title>registration</title>
+<style type="text/css">
+
+table {
+	color:ff00ff;
+	 font-size: x-large;
+	 border-color:#6B4325;
+	 border-left-style: dashed;
+	 border-right-style: dashed;
+	 border-top-style: dashed;
+	 border-bottom-style: dashed;
+}
+#tra{
+	background-color: #0000ff;
+}
+
+
+</style>
+
+
+<!--     dob  -->
+
+
+<script type="text/javascript" language="javascript">
+    function validation()
+    {
+    	document.frm.firstname.style.border="";
+    	document.frm.lastname.style.border="";
+    	document.frm.emailusr.style.border="";
+    	document.frm.phonenumber.style.border="";
+    	document.frm.dob.style.border="	";
+    	document.frm.passwordusr.style.border="";
+    	document.frm.r_pass.style.border="";
+    	document.frm.securityqans.style.border="";
+    	document.frm.country.style.border="";
+    	document.frm.state.style.border="";
+    	document.frm.dist.style.border="";
+    	document.frm.school.style.border="";	
+   		document.frm.collage.style.border=" ";	
+    	document.frm.uni.style.border="";
+    	document.frm.securityqid.style.border="";
+    				
+if (document.frm.firstname.value == ""){
+    		
+    		//document.getElementById("firstname").style.border="1px solid red";
+    		document.frm.firstname.style.border="2px solid red";
+    		//alert("enter first name");
+    		return false;
+    	}
+if (document.frm.lastname.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.lastname.style.border="2px solid red";
+	//alert("enter last name");
+	return false;
+}
+	
+if (document.frm.emailusr.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.emailusr.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+
+if (document.frm.phonenumber.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.phonenumber.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+
+if (document.frm.dob.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.dob.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+   
+if (document.frm.passwordusr.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.passwordusr.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+ 
+if (document.frm.r_pass.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.r_pass.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+ 
+   
+	if (document.frm.r_pass.value !=  document.frm.passwordusr.value){
+		
+		//document.getElementById("firstname").style.border="1px solid red";
+		document.frm.r_pass.style.border="2px solid red";
+		document.frm.passwordusr.style.border="2px solid red";
+		alert("password not match");
+		return false;
+	}   
+   
+	if (document.frm.securityqid.selectedIndex==0){
+		
+		//document.getElementById("firstname").style.border="1px solid red";
+		document.frm.securityqid.style.border="2px solid red";
+		//alert("enter email id");
+		return false;
+	} 
+
+	
+if (document.frm.securityqans.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.securityqans.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+} 
+
+if (document.frm.country.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.country.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+ 
+if (document.frm.state.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.state.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+ 
+if (document.frm.dist.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.dist.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+}
+
+if (document.frm.school.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.school.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+} 
+
+if (document.frm.collage.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.collage.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+} 
+
+if (document.frm.uni.value == ""){
+	
+	//document.getElementById("firstname").style.border="1px solid red";
+	document.frm.uni.style.border="2px solid red";
+	//alert("enter email id");
+	return false;
+} 
+
+
+ 
+    }
+</script>
+
+
+
+
+</head>
+<body style="background-color: black;" >
+<div align="center">
+<font style="font-family: Algerian;font-style: Algerian">
+
+
+
+
+	<form action="a" name="frm" method="post" enctype="multipart/form-data" align="center" onsubmit="return validation()">
+	
+	<font color="#86259E" style="font-family: viner hand itc;font-size:large; " >
+	<div align="center" >
+		<table  >
+			<tr id="tra"><td colspan="2">   &nbsp; &nbsp; &nbsp;<font size="24"> <b> REGISTRATION FORM </b></font> </td></tr>
+		<!-- 	<tr><td id="a">real-touch user name</td><td><input type="text" name="r_name" id="r_name"/></td></tr>  -->
+			<tr><td>    enter first name</td><td><input type="text" name="firstname" id="firstname "/></td></tr>
+			<tr><td>     enter last name</td><td><input type="text" name="lastname" id="lastname"/></td></tr>
+			<tr><td> select sex </td><td><select name="sex">
+			<option value="1">male</option>
+			<option value="2">fe-male</option>
+			 </select> </td></tr>
+			<tr><td>       enter maid-id </td><td><input type="text" name="emailusr" id="emailusr"/> </td></tr>
+			<tr><td> enter phone no. </td><td><input type="text" name="phonenumber" id="phonenumber"/> </td></tr>
+			<tr><td> select status </td><td><select name="status"><option value="1">married</option><option value="2">unmarried</option><option value="3">in relationtiop</option></select> </td></tr>
+			<tr><td> enter birth date</td><td> <input type="text" name="dob"/></td></tr>
+
+			<tr height="40px"><td>select your-photo  </td><td><s:file name="imagefile" id="imagefile" 		 /> </td></tr>
+	<!-- 	</table>
+		
+		<table>  -->
+		<tr id="tra" ><td colspan="2"> --- security portion-----------------------------------</td></tr>
+			<tr><td> enter password </td><td><input type="text" name="passwordusr" id="passwordusr"/> </td></tr>
+			<tr><td>re-enter password </td><td><input type="text" name="r_pass" id="r_pass"/> </td></tr>
+			<tr><td> select question </td><td><select name="securityqid" id="securityqid">
+		    				<option selected="selected">select</option>
+                        	<option value=1 >What is your mother's maiden name?</option>
+                        	<option value=2>What is your pet's name?</option>
+                        	<option value=3>What is the name of the company of your first job?</option>
+                        	<option value=4>In what city or town was your first job?</option>
+                        	<option value=5>What year did you graduate from High School?</option>
+                        </select> </td></tr>
+			<tr><td> enter answer </td><td><input type="text" name="securityqans" id="securityqans" /> </td></tr>
+	<!-- 	</table>
+		
+		<table>	 -->
+		<tr id="tra"><td colspan=21"> --- address portion-------------------------------------			</td></tr>
+			<tr><td> enter country </td><td><input type="text" name="country" id="country" /> </td></tr>
+			<tr><td>enter state  </td><td><input type="text" name="state" id="state" /> </td></tr>
+			<tr><td> enter district  </td><td><input type="text" name="dist" id="dist" /> </td></tr>
+			<tr><td>enter city</td> <td><input type="text" name="city" id="city" ></td>   </tr>
+			<tr><td>enter address  </td><td><input type="text" name="address" id="address"  /> </td></tr>
+			<tr><td> enter pincode </td><td><input type="text" name="postcode" id="postcode" /> </td></tr>
+	<!-- 	</table>
+			
+		<table>    -->
+		<tr  id="tra"><td colspan=21"> --- education portion portion-------------------------</td></tr>
+			<tr><td>enter school name  </td><td><input type="text" name="school" id="" /> </td></tr>
+			<tr><td> enter collage name </td><td><input type="text" name="collage" id="collage" /> </td></tr>
+			<tr><td> enter univercity name </td><td><input type="text" name="uni" id="uni" /> </td></tr>
+			<tr><td> where are you work </td><td><input type="text"  name="work" id="" /> </td></tr>
+			<tr><td> language know </td><td><input type="text"  name="lang" id="" /> </td></tr>
+	<!-- 	</table>
+			
+		<table>   -->
+		<tr id="tra" ><td colspan=21"> --- who is your favorite-------------------------------</td></tr>
+			<tr><td> game </td><td><input type="text" name="gm" id="" /> </td></tr>
+			<tr><td> movie  </td><td><input type="text" name="mv" id="" /> </td></tr>
+			<tr><td>  singer </td><td><input type="text" name="sng" id="" /> </td></tr>
+			<tr><td> book </td><td><input type="text" name="book" id="" /> </td></tr>
+			<tr><td> sentence </td><td><input type="text" name="sent" id="" /> </td></tr>
+			<tr><td> idle  </td><td><input type="text" name="idl" id="" /> </td></tr>
+	<!-- 	</table>
+			
+		<table>   -->
+		<tr id="tra"><td colspan=21"> --- personalize ---------------------------------------</td></tr>
+			<tr><td> select background image  </td><td><input type="file" name="bimg" id="bimg" /> </td></tr>
+			<tr><td> select background sound </td><td><input type="file" name="b_sund" id="b_sund" /> </td></tr>
+		</table>
+	</div>
+<input type="submit" value="save" >
+</font>
+</form>
+</font>
+</div>
+</body>
+</html>
+

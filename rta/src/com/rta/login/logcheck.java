@@ -1,0 +1,14 @@
+package com.rta.login;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class logcheck extends ActionSupport {
+	
+	public String execute()throws Exception{
+		
+		
+		
+		return SUCCESS;
+	}
+
+}

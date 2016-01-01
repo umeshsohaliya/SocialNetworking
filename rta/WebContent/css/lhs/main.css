@@ -1,0 +1,6 @@
+/**/ 
+
+#wrapper{margin:0 auto;}#header{}#twitter{float:right;width:70px;}
+*{margin:0;padding:0;}
+.boxgrid{width:215px;height:130px;margin:0 1px 1px 0;float:left;background:#784fa4;overflow:hidden;position:relative;}
+.boxgrid img{position:absolute;top:0;left:0;border:0;}

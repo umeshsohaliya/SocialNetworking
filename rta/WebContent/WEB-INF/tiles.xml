@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    
+    <!-- user home page -->
+	<definition name="first" template="/first.jsp">
+		<put-attribute name="header" value="/header.jsp"/>
+		<put-attribute name="lhs" value="/lhs.jsp"/>     
+      	<put-attribute name="content" value="/content.jsp"/>
+      	<put-attribute name="rhs" value="/rhs.jsp"/>
+      	<put-attribute name="footer" value="/footer.jsp"/>
+      	<put-attribute name="pageTitle" value="real-touch"/>
+	</definition>
+	
+	
+	<definition name="main.tiles" extends="first">   	
+ 	</definition>
+	
+																					<!--    poll       -->
+		<definition name="newpoll.tiles" extends="first">
+  		<put-attribute name="content" value="/newpoll.jsp"/>
+  		
+  	</definition>	
+  	
+  																		
+																					
+																					
+  	<definition name="Reqpoll.tiles" extends="first">
+  		<put-attribute name="content" value="/Createpoll.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="playpoll.tiles" extends="first">
+  		<put-attribute name="content" value="/Contentpoll.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="resultpoll.tiles" extends="first">
+  		<put-attribute name="content" value="/resultpoll.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="gopoll.tiles" extends="first">
+  		<put-attribute name="content" value="/gopoll.jsp"/>
+  	</definition>
+  	
+  	<definition name="aaa.tiles" extends="first">
+  		<put-attribute name="content" value="/gopoll.jsp"/>
+  	</definition>
+  	 	
+  		<definition name="findpoll.tiles" extends="first">
+  		<put-attribute name="content" value="/gopoll.jsp"/>
+  		
+  	</definition>
+  																				<!--      page           -->
+  
+  	
+  	
+  	<definition name="aaa.tiles" extends="first">
+  		<put-attribute name="content" value="/gopoll.jsp"/>
+  	
+  	</definition>
+  	
+  	<definition name="createpage.tiles" extends="first">
+  		<put-attribute name="content" value="/createpage.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="findpage.tiles" extends="first">
+  		<put-attribute name="content" value="/findpage.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="coipage.tiles" extends="first">
+  		<put-attribute name="content" value="/coipage.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="epage.tiles" extends="first">
+  		<put-attribute name="content" value="/epage.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="boppage.tiles" extends="first">
+  		<put-attribute name="content" value="/boppage.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="lboppage.tiles" extends="first">
+  		<put-attribute name="content" value="/lboppage.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="aboppage.tiles" extends="first">
+  		<put-attribute name="content" value="/aboppage.jsp"/>
+  		
+  	</definition>
+  	
+  	<definition name="show.tiles" extends="first">
+  		<put-attribute name="content" value="/show.jsp"/>
+  	</definition>
+  	
+  	<definition name="owner.tiles" extends="first">
+  		<put-attribute name="content" value="/owner.jsp"/>
+  	</definition>
+  	
+  	<definition name="pagesearch.tiles" extends="first">
+  		<put-attribute name="content" value="/findpage.jsp"/>
+  	</definition>
+  	
+  	<definition name="savepage.tiles" extends="first">
+  		<put-attribute name="content" value="/pageowner.jsp"/>
+  	</definition>
+  	
+  												
+  												
+  	
+  	
+  													<!--   search  -->
+  													
+  	<definition name="search.tiles" extends="first">
+  		<put-attribute name="content" value="/search.jsp"/>
+  		
+  	</definition>
+  										<!--    notification  -->		
+  	<definition name="play.tiles"/>
+  	<!--   update profile    -->
+  		<definition name="updateprofile.tiles" extends="first">
+  			<put-attribute name="content" value="/updateprofile.jsp"/>
+  		</definition>
+  		
+  		<definition name="viewprofile.tiles" extends="first">
+  			<put-attribute name="content" value="/viewprofile.jsp"/>
+  		</definition>
+  		
+  	
+  	<definition name="userpro.tiles" extends="first">
+  		<put-attribute name="content" value="/Viewuser.jsp"/>
+  	</definition>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	<definition name="about.tiles" extends="first">
+  		<put-attribute name="content" value="/aboutus.jsp"/>
+  	</definition>
+  	
+  	<definition name="contact.tiles" extends="first">
+  		<put-attribute name="content" value="/contactus.jsp"/>
+  	</definition>
+  	
+</tiles-definitions>

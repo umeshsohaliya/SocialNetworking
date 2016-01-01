@@ -1,0 +1,222 @@
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="default" extends="struts-default">
+
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		
+		
+		<!--  main page tiles action comming from homepage home link   -->
+			
+		<action name="a"  class="dtb">
+			<result name="success" >/login.jsp</result>
+		</action>
+		
+		<action name="log"  class="logcheck" >
+			<result name="success" type="tiles">main.tiles</result>
+			<result name="error" >/login.jsp</result>
+		</action>
+		
+		<action name="main"   >
+			<result name="success" type="tiles">main.tiles</result>
+			
+		</action>
+		
+																						<!--    poll       -->
+		<action name="playpoll" class="playpoll">
+			<result name="success" type="tiles"> playpoll.tiles</result>
+		</action>
+		
+		<action name="newpoll" class="newpoll">
+			<result name="success" type="tiles"> newpoll.tiles</result>
+		</action>
+		
+		<action name="epoll" class="epoll">
+			<result name="success" type="tiles"> main.tiles</result>
+		</action>
+		
+		<action name="Reqpoll" class="reqpoll">
+			<result name="success" type="tiles"> Reqpoll.tiles</result>
+		</action>
+		
+		<action name="resultpoll" class="resultpoll">
+			<result name="success" type="tiles">resultpoll.tiles</result>
+		</action>
+		
+		<action name="createpoll" class="createpoll">
+			<result name="success" type="tiles">main.tiles</result>
+		</action>
+		
+		<action name="aaa" class="gopoll">
+			<result name="success" type="tiles">aaa.tiles</result>
+		</action>
+		
+		<action name="findpoll" class="a">
+			<result name="success" type="tiles">findpoll.tiles</result>
+		</action>
+		
+		
+																					<!--      page           -->
+		
+		
+		<action name="createpage" class="createpage">
+			<result name="success" type="tiles">createpage.tiles</result>
+		</action>
+		
+		<action name="findpage"  class="findpage">
+			<result name="success" type="tiles">findpage.tiles</result>
+		</action>
+		
+		
+		<action name="coipage"  class="coipage">
+			<result name="success" type="tiles">coipage.tiles</result>
+		</action>
+		
+		<action name="epage"  class="epage">
+			<result name="success" type="tiles">coipage.tiles</result>
+		</action>
+	
+		
+		<action name="boppage"  class="boppage">
+			<result name="success" type="tiles">coipage.tiles</result>
+		</action>
+		
+		<action name="lboppage"  class="lboppage">
+			<result name="success" type="tiles">coipage.tiles</result>
+		</action>
+		
+		<action name="aboppage"  class="aboppage">
+			<result name="success" type="tiles">coipage.tiles</result>
+		</action>
+		
+		<action name="savepage" class="savepage">
+			<result name="success" type="tiles">savepage.tiles</result>
+		</action>
+		
+		<action name="show" class="show">
+			<result name="success" type="tiles">show.tiles</result>
+			<result name="error" type="tiles">owner.tiles</result>
+		</action>
+		
+		<action name="pagesearch" class="pagesearch">
+			            <result name="success" type="tiles">pagesearch.tiles</result>
+		</action>
+		
+		
+			
+		<action name="upg" class="pgupld">
+			<result name="success" type="tiles">owner.tiles</result>
+		</action>
+		
+								<!--  upload  -->
+		<action name="umain" class="upldmain">
+			<result name="success" type="tiles">main.tiles</result>
+		</action>
+		
+																					<!--    search     -->
+								
+		<action name="abc" class="abc">
+			<result name="success" type="tiles"> search.tiles</result>
+		</action>
+		
+																					<!-- -          create friend       -->
+							
+		<action name="add" class="addf">
+			<result name="success" type="tiles">search.tiles</result>
+		</action>
+		
+																		<!--    notification     -->
+		<action name="noti" class="noti">
+			<result name="success" type="tiles">main.tiles</result>
+			<result name="error" type="tiles">show.tiles</result>
+			<result name="input" type="tiles">playpoll.tiles</result>
+		</action>
+		
+						<!--   log out -->
+		<action name="logout" class="logout">
+			<result name ="success">login.jsp</result>
+		</action>
+		
+		
+				<!--            profile      -->
+		
+		<action name="viewprofile" class="updateprofile">
+			<result name="success" type="tiles" >viewprofile.tiles</result>
+		</action>
+		
+		<action name="updateprofile" class="updateprofile">
+				<result name="success" type="tiles">updateprofile.tiles</result>
+		</action>
+		
+		<action name="userpro" class="userpro">
+				<result name="success" type="tiles">userpro.tiles</result>
+		</action>
+		
+		<action name="savepro" class="savepro">
+				<result name="success" type="tiles">main.tiles</result>
+		</action>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<action name="about" >
+				<result name="success" type="tiles">about.tiles</result>
+		</action>
+		
+		
+		
+		<action name="contact" >
+				<result name="success" type="tiles">contact.tiles</result>
+		</action>
+		
+</package>
+</struts>
+
+
+																	<!--      page         
+		
+		<action name="createpage" class="createpage">
+			<result name="success" type="tiles">createpage.tiles</result>
+		</action>
+		
+		<action name="findpage"  class="findpage">
+			<result name="success" type="tiles">findpage.tiles</result>
+		</action>
+		
+		
+		<action name="coipage"  class="coipage">
+			<result name="success" type="tiles">coipage.tiles</result>
+		</action>
+		
+		<action name="epage"  class="epage">
+			<result name="success" type="tiles">epage.tiles</result>
+		</action>
+	
+		
+		<action name="boppage"  class="boppage">
+			<result name="success" type="tiles">boppage.tiles</result>
+		</action>
+		
+		<action name="lboppage"  class="lboppage">
+			<result name="success" type="tiles">lboppage.tiles</result>
+		</action>
+		
+		<action name="aboppage"  class="aboppage">
+			<result name="success" type="tiles">aboppage.tiles</result>
+		</action>
+		  -->
